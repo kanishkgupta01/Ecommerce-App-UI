@@ -6,6 +6,7 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import Cart from './pages/Cart.jsx';
 import OrderHistory from './pages/OrderHistory.jsx';
 import NavBar from './components/NavBar.jsx';
+import Login from './pages/Login.jsx'; 
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/orders" element={<OrderHistory />} />
+        <Route path="/login" element={<Login />} /> {}
       </Routes>
     </Router>
   );

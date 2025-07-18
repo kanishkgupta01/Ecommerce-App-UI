@@ -1,12 +1,32 @@
-# React + Vite
+# Rajasthan Royals E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **React-based frontend** for the Rajasthan Royals official e-commerce platform. Users can browse products, add items to the cart, place orders, and view order history.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥 Tech Stack
 
-## Expanding the ESLint configuration
+- **React (JavaScript)**
+- **Axios** – for API calls
+- **React Router** – for navigation
+- **HTML/CSS (Inline Styling)** – basic styling
+- **Backend** – ASP.NET Core Web API (connected via REST)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository:
+### 2. Install the following dependencies
+    npm install
+    npm run dev// will start the application locally
+### 3.📂 Project Structure
+ src/
+│   ├── api/              # Axios setup
+│   ├── components/       # Reusable components (e.g., ProductCard)
+│   ├── pages/            # Core pages like Home, Cart, Orders,Login etc.
+│   ├── App.js            # Main app routing
+│   └── index.js          # React entry point
+
+👤 Author
+Kanishk Gupta

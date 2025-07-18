@@ -38,7 +38,7 @@ function OrderHistory() {
             const items = order.categoryIdVsCount || {};
             let totalPrice = 0;
 
-            // Compute total amount
+            
             for (const [catId, count] of Object.entries(items)) {
               const price = categoryPrices[catId]?.price || 0;
               totalPrice += price * count;

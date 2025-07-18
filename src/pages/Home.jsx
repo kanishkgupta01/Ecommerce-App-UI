@@ -13,7 +13,7 @@ function Home() {
     Flag: 3,
   };
 
-  // ✅ Fetch all products on load
+  
   useEffect(() => {
     fetchAllProducts();
   }, []);
@@ -52,7 +52,7 @@ function Home() {
     <div style={{ padding: 20 }}>
       <h2>All Products</h2>
 
-      {/* 🔍 Search Form */}
+      {}
       <form onSubmit={handleSearch} style={{ marginBottom: 20, display: 'flex', alignItems: 'center', gap: '10px' }}>
         <div style={{ position: 'relative' }}>
           <span style={{
@@ -102,7 +102,7 @@ function Home() {
         </button>
       </form>
 
-      {/* 🛒 Product Grid */}
+      {}
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',

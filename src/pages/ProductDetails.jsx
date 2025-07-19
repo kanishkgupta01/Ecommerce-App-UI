@@ -5,7 +5,7 @@ import api from '../api/api';
 function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const userId = '1';
+  const userId =  '1'; 
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -20,7 +20,7 @@ function ProductDetails() {
     try {
       await api.post('/api/cart/add', {
         userId,
-        categoryId: parseInt(product.categoryId),
+        productId: product.id, // send productId instead of categoryId
         quantity: 1
       });
       alert('Added to cart!');
@@ -39,13 +39,10 @@ function ProductDetails() {
       alignItems: 'flex-start',
       flexWrap: 'wrap'
     }}>
-      
-
       <div style={{ maxWidth: '500px' }}>
         <h2>{product.name}</h2>
         <p><strong>Price:</strong> ₹{product.price}</p>
         <p><strong>Description:</strong> {product.description}</p>
-        <p><strong>Category ID:</strong> {product.categoryId}</p>
 
         <button
           onClick={handleAddToCart}

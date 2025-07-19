@@ -9,14 +9,14 @@ function ProductCard({ product }) {
       borderRadius: '10px',
       width: '220px',
       textAlign: 'center',
-      backgroundColor: '#eaf4ff', // Soft blue background
+      backgroundColor: '#eaf4ff',
       boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
       transition: 'transform 0.2s',
     }}>
       <h4 style={{ color: '#333', marginBottom: 10 }}>{product.name}</h4>
       <p style={{ fontSize: '16px', fontWeight: 'bold' }}>₹{product.price}</p>
       <Link
-        to={`/product/${product.id}`}
+        to={`/product/${product.id || product._id}`}
         style={{
           display: 'inline-block',
           marginTop: 10,
